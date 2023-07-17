@@ -12,8 +12,8 @@ export const Hero = () => {
         <source src="https://res.cloudinary.com/djr22sgp3/video/upload/a_90/v1689594936/pexels-nikita-ryumshin-10994870_1080p_optqhk.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="absolute inset-0 bg-radial z-20"></div>
-      <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center z-10 py-20 md:py-32 xl:py-36">
+      <div className="absolute inset-0 bg-radial z-10"></div>
+      <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center z-20 py-20 md:py-32 xl:py-36">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
