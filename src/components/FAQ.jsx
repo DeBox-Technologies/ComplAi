@@ -42,16 +42,15 @@ export const FAQ = () => (
             Frequently Asked Questions
           </h2>
           <div className="mb-11 flex flex-wrap -m-1">
-            {FAQData.map((item, index) => (
-              <div className="w-full p-1">
-                <FAQBox
-                  title={item.question}
-                  content={item.answer}
-                  key={`${item.question}-${item.answer}`}
-                  defaultOpen={index === 0}
-                />
-              </div>
-            ))}
+          {FAQData.map((item, index) => (
+            <div className="w-full p-1" key={`${item.question}-${item.answer}`}>
+              <FAQBox
+                title={item.question}
+                content={item.answer}
+                defaultOpen={index === 0}
+              />
+            </div>
+          ))}
           </div>
         </div>
       </div>

@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'radial': 'radial-gradient(circle, transparent 0%, black 100%)'
+      },
       colors: {
         customPrimary: "rgb(99, 102, 241)",
         customSecondary: "rgb(161, 163, 247)",
@@ -15,7 +18,7 @@ module.exports = {
         customGrayText: "rgb(174, 178, 183)",
         customDarkBgTransparent: "rgb(31, 32, 35, 0.7)",
         customDarkBgTransparentDarker: "rgb(0,0,0,0.5)",
-        customDarkBgTransparentLighter: "rgb(48, 49, 54, 0.7)"  
+        customDarkBgTransparentLighter: "rgb(48, 49, 54, 0.7)"
       },
       fontFamily: {
         Inter: "Inter",
@@ -32,4 +35,3 @@ module.exports = {
     },
   },
 };
-

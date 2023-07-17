@@ -7,24 +7,24 @@ import testimonial3 from "../assets/images/testimonial3.png";
 
 const testimonialsData = [
   {
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
+    customerName: "Chris Smith",
+    customerTitle: "CEO, Finstart Pty Ltd",
     content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
+    "Complai has been an absolute game changer for managing regulatory requirements in our business. The AI assistant handles compliance checks seamlessly, giving us time to focus on our core operations growth.",
     image: testimonial1,
   },
   {
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
+    customerName: "Alicia Davies",
+    customerTitle: "CFO, CountingHouse LLC",
     content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
+    "I don't know how we operated before Complai. Keeping up with financial regulations was a constant struggle. Complai's automation and intelligence takes the pain out of compliance. I highly recommend it!",
     image: testimonial2,
   },
   {
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
+    customerName: "Sanjay Patel",
+    customerTitle: "Compliance, Crowdfund Capital",
     content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
+    "In the fast-paced financial sector, falling behind on compliance can have disastrous impacts. Complai's AI platform has given us 100% confidence that we are always meeting regulatory standards, without having to sacrifice.",
     image: testimonial3,
   },
 ];
@@ -43,7 +43,7 @@ export const Testimonials = () => (
           Testimonials
         </div>
         <div className="custom-block-big-title text-center mb-16 px-8 sm:px-24 md:px-48">
-          People like you love Tailcast
+          People like you love ComplAi
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
@@ -59,7 +59,7 @@ export const Testimonials = () => (
                 "{testimonial.content}"
               </div>
               <div className="flex mt-4 mb-2 xl:mt-8 xl:mb-4">
-                <img src={testimonial.image} alt="" width="45px" />
+                <img src={testimonial.image} alt="" className="w-12 h-12" />
                 <div className="flex flex-col ml-4">
                   <div className="custom-content-text-white font-medium">
                     {testimonial.customerName}
