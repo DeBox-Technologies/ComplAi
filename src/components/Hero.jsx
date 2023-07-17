@@ -13,7 +13,7 @@ export const Hero = () => {
         Your browser does not support the video tag.
       </video>
       <div className="absolute inset-0 bg-radial z-20"></div>
-      <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center z-50 py-20 md:py-32 xl:py-36">
+      <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center z-10 py-20 md:py-32 xl:py-36">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}

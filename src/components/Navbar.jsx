@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { ComplAiLogo } from "../assets/logos/ComplAiLogo";
-import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
   { label: "Home", href: "#home", ariaLabel: "Home" },
@@ -103,15 +102,15 @@ export const Navbar = () => {
                   {label}
                 </a>
               ))}
-              <a
-                className="text-white custom-border-gray rounded-xl
-           bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-                href="https://github.com/matt765/Tidestream"
-                target="_blank"
-              >
-                <GithubIcon />
-                Source code
-              </a>
+              <div className="grow basis-0 justify-end hidden lg:flex">
+                <button
+                  className="text-white custom-border-gray rounded-xl bg-customDarkBg2 hover:bg-customPrimary hover:cursor-pointer border-gray-700 px-4 py-2 text-sm flex justify-center items-center"
+                  target="_blank"
+                  aria-label="Try Today"
+                >
+                  Try Today
+                </button>
+              </div>
             </div>
           </motion.div>
         )}
